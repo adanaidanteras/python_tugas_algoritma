@@ -30,9 +30,16 @@ elif (nilai_akhir >= 41) and (nilai_akhir <= 59):
 else:
     grade = "E"
 
+keterangan = "";
+if (grade == "A") or (grade == "B") or (grade == "C"):
+    keterangan = "Lulus"
+else:
+    keterangan = "Tidak Lulus"
+
 print("-" * 50)
 print("Nim              : "+nim)
 print("Nama             : "+nama)
 print("Mata Kuliah      : "+mat_kul)
 print("Nilai Akhir      : "+str(nilai_akhir))
 print("Grade            : "+grade)
+print("Dinyatakan       : "+keterangan)
