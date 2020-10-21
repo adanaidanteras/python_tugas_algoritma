@@ -1,4 +1,3 @@
-
 print("-" * 50)
 print("\t\t  Menghitung Nilai Akhir")
 print("-" * 50)
