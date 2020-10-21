@@ -17,28 +17,29 @@ persentase_nilai_UAS = nilai_UAS * 30 / 100
 
 nilai_akhir = persentase_nilai_absesnsi + persentase_nilai_tugas + persentase_nilai_UTS + persentase_nilai_UAS
 
-grade=""
+grade = ""
+keterangan = ""
+
 if (nilai_akhir >= 81) and (nilai_akhir <= 100):
     grade = "A"
+    keterangan = "Lulus"
 elif (nilai_akhir >= 75) and (nilai_akhir <= 80):
     grade = "B"
+    keterangan = "Lulus"
 elif (nilai_akhir >= 60) and (nilai_akhir <= 74):
     grade = "C"
+    keterangan = "Lulus"
 elif (nilai_akhir >= 41) and (nilai_akhir <= 59):
     grade = "D"
+    keterangan = "Tidak Lulus"
 else:
     grade = "E"
-
-keterangan = "";
-if (grade == "A") or (grade == "B") or (grade == "C"):
-    keterangan = "Lulus"
-else:
     keterangan = "Tidak Lulus"
 
 print("-" * 50)
-print("Nim              : "+nim)
-print("Nama             : "+nama)
-print("Mata Kuliah      : "+mat_kul)
-print("Nilai Akhir      : "+str(nilai_akhir))
-print("Grade            : "+grade)
-print("Dinyatakan       : "+keterangan)
+print("Nim              : " + nim)
+print("Nama             : " + nama)
+print("Mata Kuliah      : " + mat_kul)
+print("Nilai Akhir      : " + str(nilai_akhir))
+print("Grade            : " + grade)
+print("Dinyatakan       : " + keterangan)
